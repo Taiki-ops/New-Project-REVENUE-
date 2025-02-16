@@ -1,9 +1,8 @@
-<!-- App.svelte -->
 <script>
   import { Router, Link, Route } from "svelte-routing";
   import Home from "./routes/Home.svelte";
 
-  export let url = "";
+  export let url = ""; // This is fine to export
 </script>
 
 <Router {url}>
@@ -11,6 +10,6 @@
     <Link to="/">Home</Link>
   </nav>
   <div>
-    <Route path="/"><Home /></Route>
+    <Route path="/" component={Home} />
   </div>
 </Router>
