@@ -1,8 +1,9 @@
 <script lang="ts">
+
 import Navbar from "../lib/Navbar.svelte";
 </script>
 
 <main>
     <Navbar />
-    <p>WIP, give us a second</p>
+    <h1>test 123</h1>
 </main>
